@@ -22,7 +22,9 @@ pages = st.slider("Number of pages", 1, 5, 2)
 # ================= SCRAPING FUNCTION =================
 def scrape_wuzzuf(search_job, pages):
     chrome_options = Options()
-    chrome_options.add_argument("--start-maximized")
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--disable-notifications")
 
     driver = webdriver.Chrome(options=chrome_options)

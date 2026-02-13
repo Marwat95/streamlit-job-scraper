@@ -1,5 +1,5 @@
 streamlit
+selenium
+beautifulsoup4
 pandas
-pyodbc 
 matplotlib
-requests
